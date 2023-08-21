@@ -9,7 +9,7 @@ import axios from 'axios';
 import Tarifications from './components/tarifications';
 import Scan from './components/scan';
 
-axios.defaults.baseURL = 'https://ryanodejs.railway.internal';
+axios.defaults.baseURL = 'http://ryanodejs.railway.internal:3001';
 
 function App() {
   return (
