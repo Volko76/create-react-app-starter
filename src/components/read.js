@@ -20,14 +20,14 @@ export default function Read() {
     }
 
     const onDelete = (id) => {
-        axios.delete(`delete/${id}`)
+        axios.delete(`https://ryanodejs.railway.internal/delete/${id}`)
             .then(() => {
                 getData();
             })
     }
 
     const getData = (id) => {
-        axios.get(`all/${id}`)
+        axios.get(`https://ryanodejs.railway.internal/all/${id}`)
             .then((response) => {
                 setAPIData(response.data);
             })
