@@ -42,7 +42,7 @@ export default function Create() {
       telephoneDest: telephoneDest
     });
     axios
-      .post('https://ryanodejs.railway.internal/add', {
+      .post('add', {
         nom: nom,
         prenom: prenom,
         addresse: addresse,
